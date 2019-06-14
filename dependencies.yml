@@ -1,0 +1,6 @@
+- url:
+    from: http://apache.crihan.fr/dist//ant/binaries/apache-ant-{{ model.piper.fullVersion }}-bin.zip
+    after:
+      inlines:
+       - mv apache-ant-{{ model.piper.fullVersion }} ant
+       - ln -s /opt/ant/bin/ant /usr/bin/ant
